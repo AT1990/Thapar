@@ -1,0 +1,53 @@
+[
+    {
+        "_id": 1,
+        "name": {
+            "firstname": "John",
+            "lastname": "Doe"
+        },
+        "address": {
+            "city": "Gurugram",
+            "state": "Haryana",
+            "country": "India"
+        },
+        "marks": [
+            90,
+            56,
+            77
+        ]
+    },
+    {
+        "_id": 2,
+        "name": {
+            "firstname": "Kunal",
+            "lastname": "Sharma"
+        },
+        "address": {
+            "city": "Gurugram",
+            "state": "Haryana",
+            "country": "India"
+        },
+        "marks": [
+            78,
+            86,
+            71
+        ]
+    },
+    {
+        "_id": 3,
+        "name": {
+            "firstname": "Raman",
+            "lastname": "Gupta"
+        },
+        "address": {
+            "city": "Gurugram",
+            "state": "Haryana",
+            "country": "India"
+        },
+        "marks": [
+            60,
+            86,
+            60
+        ]
+    }
+]
