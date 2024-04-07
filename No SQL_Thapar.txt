@@ -1,0 +1,80 @@
+No SQL
+
+Structered Data -- 
+images - videos -- visual form -- 
+unstrucetred Data -- NOSQL
+
+
+Type of No SQL Database
+
+1. Key Value Pair
+2. Column Based Database
+3. Graph based Database
+4.Document Based
+
+MongoDB
+
+Features
+1. Efficiency
+2. Big Data
+3. Indexing facility
+4. Sacalable
+5. Fault Tolerant (SHare, Replicas --> destributed)
+
+
+Database creation
+
+
+JSON - JavaScript Onject Notation
+{
+key1:value,
+}
+
+BSON - Binary encoded JSON
+
+COLLSCAN - Collection Scan 
+
+IXSCAN - index scan -- faster
+
+
+Queries
+1. createCollection
+2. Capped Collection
+3. insertOne
+4. insertMany
+5. find, findOne
+6. cursor -- array and index based fetch
+7. forEach to fetch all documents
+8. projection
+
+
+mongoimport "json_file_path" -d database_name -c collection_name --jsonArray --drop
+
+$gt -- $lt, $lte, $gte
+$in
+$nin
+$and
+$eq
+$or
+$nor
+$exists
+$type - boolean - 
+$expr -- db.summary.find({$expr:{$gt:["$dob.age","$registered.age"]}}).count()
+
+db.summary.find( { $expr: { $gt: [ { $cond: { if: { $gt: [ "dob.age", 40] }, then: { $subtract: [ "dob.age", 40] }, else: "dob.age" } }, "$registered.age"] } } ).count()
+
+- if then else condition
+- cursor 
+- foreach 
+- sorting --> db.summary.find().sort({"dob.age":-1}).limit(1)
+
+https://github.com/AT1990/Thapar
+
+
+Aggrgate Pipeline
+query - 5000
+{} -- stage 1 -- 3000
+{} -- stage 2 -- 200
+
+$match -- to match values 
+// $group -- to group values together
