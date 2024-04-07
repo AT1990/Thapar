@@ -1,0 +1,121 @@
+MongoDB Exercises
+
+
+Reference - https://www.w3resource.com/mongodb-exercises/#MongoDB_restaurants
+
+Structure of 'restaurants' collection:
+{
+  "address": {
+     "building": "1007",
+     "coord": [ -73.856077, 40.848447 ],
+     "street": "Morris Park Ave",
+     "zipcode": "10462"
+  },
+  "borough": "Bronx",
+  "cuisine": "Bakery",
+  "grades": [
+     { "date": { "$date": 1393804800000 }, "grade": "A", "score": 2 },
+     { "date": { "$date": 1378857600000 }, "grade": "A", "score": 6 },
+     { "date": { "$date": 1358985600000 }, "grade": "A", "score": 10 },
+     { "date": { "$date": 1322006400000 }, "grade": "A", "score": 9 },
+     { "date": { "$date": 1299715200000 }, "grade": "B", "score": 14 }
+  ],
+  "name": "Morris Park Bake Shop",
+  "restaurant_id": "30075445"
+}
+
+
+===== Day - 1 Exercise for first half =====
+
+Write a MongoDB query to display the fields restaurant_id, name, borough and zip code, but exclude the field _id for all the documents in the collection restaurant.
+
+Write a MongoDB query to display all the restaurant which is in the borough Bronx.
+
+Write a MongoDB query to display the first 5 restaurant which is in the borough Bronx.
+
+Write a MongoDB query to display the next 5 restaurants after skipping first 5 which are in the borough Bronx.
+
+Write a MongoDB query to find the restaurants who achieved a score more than 90.
+
+Write a MongoDB query to find the restaurants that achieved a score, more than 80 but less than 100.
+
+Write a MongoDB query to find the restaurants which do not prepare any cuisine of 'American' and achieved a score more than 70 and located in the longitude less than -65.754168.
+Note : Do this query without using $and operator.
+
+Write a MongoDB query to find the restaurants which do not prepare any cuisine of 'American' and achieved a grade point 'A' not belongs to the borough Brooklyn. The document must be displayed according to the cuisine in descending order.
+
+==============================================
+
+===== Day - 1 Exercise for second half =====
+
+Write a MongoDB query to find the restaurant Id, name, borough and cuisine for those restaurants which contain 'Wil' as first three letters for its name.
+
+Write a MongoDB query to find the restaurant Id, name, borough and cuisine for those restaurants which contain 'ces' as last three letters for its name.
+
+Write a MongoDB query to find the restaurant Id, name, borough and cuisine for those restaurants which contain 'Reg' as three letters somewhere in its name.
+
+Write a MongoDB query to find the restaurant Id, name, borough and cuisine for those restaurants which achieved a score which is not more than 10.
+
+Write a MongoDB query to find the restaurant Id, name, borough and cuisine for those restaurants which prepared dish except 'American' and 'Chinees' or restaurant's name begins with letter 'Wil'.
+
+Write a MongoDB query to find the restaurant Id, name, address and geographical location for those restaurants where 2nd element of coord array contains a value which is more than 42 and upto 52..
+
+Write a MongoDB query to arrange the name of the restaurants in ascending order along with all the columns.
+
+Write a MongoDB query to arranged the name of the cuisine in ascending order and for that same cuisine borough should be in descending order.
+
+Write a MongoDB query which will select all documents in the restaurants collection where the coord field value is Double.
+
+==================================================
+
+
+===== Day - 2 Exercise for first half =====
+
+Exercise : 1
+. Create collection employees
+    {e_id : 101, e_name : "...", e_dept : "IT", e_salary : 45445, 
+     e_details : {city : "...", state : "...", phone : 90980909 },
+     e_prev_companies : ["TCS", "INFY", "WIPRO"]
+    }
+
+2. Find employees having salary greater than 50000.
+3. Find employees who lives in Delhi.
+4. Find employees who have worked earlier in INFY
+5. Find employees who belongs to IT department and has salary more than 50000
+6. Find employees who either lives in delhi or his previous company was TCS
+
+.
+
+===== Day - 2 Exercise for first half =====
+Create a database for movies
+   - Collection - movies
+   - Collection - users
+
+Movies Collection
+- name, imdb_rating, release date, genres : [], 
+  description : {summary : "...", star : [], directors : []}
+  release_date : new Date("2021-8-12")
+- Insert at least 10 documents
+
+Users Collection
+- name, emailId, 
+  movies_watched : {count : 2, names : ["Avengers", "Thor"],
+                    "rating" : [7.8, 8.9],
+                    "review" : ["Good", "Amazing"]}
+
+- Insert at least 5 documents
+
+Queries
+- Find all movies directed by "XYZ".
+- Find movies whose rating is above 8.0
+- Find movies whose genre is action and comedy
+- Find movies whose genre is only action
+- Find movies whose review contains positive(good/best/awesome..) words
+- Find users who has watched more than 2 movies
+- Find users who has given 8 rating to Avengers Movies
+- Find users who has watched only 1 movie till now.
+- Find movies whose imdb rating is not greater than 8
+- Find movies where either imdb rating is above 8 or genre is action
+- Find movies where rating is above 8 and actor is "XYZ"
+- Find movies where summary contains word "power"
+- Find reviews from users collection where review contains bad words
