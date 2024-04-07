@@ -1,0 +1,92 @@
+[
+    {
+        "p_id" : 1001,
+        "name" : "Apple Iphone 13",
+        "price" : 90000,
+        "brand" : "Apple",
+        "category" : "Electronics",
+        "details" : {
+            "front_camera" : "10 mp",
+            "back_camera" : "30 mp",
+            "ram" : "8 GB",
+            "memory" : ["64 GB", "128 GB", "256 GB"],
+            "color" : ["silver", "black", "gold", "gray"]
+        },
+        "vendors" : ["Istore", "Zstore", "Xstore"]
+    },
+
+    {
+        "p_id" : 1002,
+        "name" : "Asus ROG Strix",
+        "price" : 150000,
+        "brand" : "Asus",
+        "category" : "Electronics",
+        "details" : {
+            "ram" : ["16 GB", "32 GB"],
+            "memory" : ["1 TB", "2 TB", "512 GB"],
+            "color" : ["silver", "black", "gold", "gray"]
+        },
+        "vendors" : ["Y Store", "Asus Store"]
+    },
+
+    {
+        "p_id" : 1003,
+        "name" : "Adidas Shoes",
+        "price" : 4500,
+        "brand" : "Adidas",
+        "category" : "Shoes",
+        "details" : {
+            "size" : [7,8,9,10],
+            "color" : ["silver", "black", "white", "gray"],
+            "type" : ["sports", "sneakers"]
+        }
+    },
+
+    {
+        "p_id" : 1004,
+        "name" : "One Plus 10T",
+        "price" : 50000,
+        "brand" : "One Plus",
+        "category" : "Electronics",
+        "details" : {
+            "front_camera" : "50 mp",
+            "back_camera" : "80 mp",
+            "ram" : ["8 GB", "4 GB"],
+            "memory" : ["64 GB", "128 GB"],
+            "color" : ["silver", "black", "gold", "gray"]
+        },
+        "vendors" : ["Istore", "Zstore", "Xstore"]
+    },
+    {
+        "p_id" : 1005,
+        "name" : "Samsung Galaxy S21",
+        "price" : 35000,
+        "brand" : "Samsung",
+        "category" : "Electronics",
+        "details" : {
+            "front_camera" : "32 mp",
+            "back_camera" : "12 mp + 12 mp + 8 mp",
+            "ram" : ["8 GB", "4 GB"],
+            "memory" : ["128 GB", "256 GB"],
+            "color" : ["silver", "black", "gold", "gray"],
+            "battery" : 4500
+        },
+        "vendors" : ["Istore", "Zstore", "Xstore"],
+        "discount" : 4.5,
+        "offers" : ["offer_1", "offer_2"]
+    },
+    {
+        "p_id" : 1006,
+        "name" : "Mi Tv",
+        "price" : 12999,
+        "brand" : "Mi",
+        "category" : "Electronics",
+        "details" : {
+            "operating_system" : "Android",
+            "color" : "black"
+        },
+        "vendors" : ["Istore", "Zstore", "Xstore"],
+        "discount" : 4.5,
+        "offers" : "offer_1"
+    }
+]

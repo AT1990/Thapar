@@ -1,0 +1,54 @@
+[
+    {
+        "email": "john12@gmail.com",
+        "items" : [
+            {
+                "product_id": 1001,
+                "qty" : 2
+            },
+            {
+                "product_id": 1002,
+                "qty" : 1
+            }
+        ]
+    },
+
+    {
+        "email": "smith01@gmail.com",
+        "items" : [
+            {
+                "product_id": 1003,
+                "qty" : 1
+            }
+        ]
+    },
+
+    {
+        "email": "john112@gmail.com",
+        "items" : [
+            {
+                "product_id": 1004,
+                "qty" : 2
+            },
+            {
+                "product_id": 1001,
+                "qty" : 1
+            }
+        ]
+    },
+
+    {
+        "email": "nick15@gmail.com",
+        "items" : [
+            {
+                "product_id": 1003,
+                "qty" : 2
+            },
+            {
+                "product_id": 1002,
+                "qty" : 1
+            }
+        ]
+    }
+    
+]

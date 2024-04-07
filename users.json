@@ -1,0 +1,32 @@
+[
+    {
+        "_id" : 101,
+        "name" : "John",
+        "email" : "john12@gmail.com",
+        "city" : "Chennai"
+    },
+    {
+        "_id" : 102,
+        "name" : "Sam",
+        "email" : "sam99@gmail.com",
+        "city" : "Pune"
+    },
+    {
+        "_id" : 103,
+        "name" : "Smith",
+        "email" : "smith01@gmail.com",
+        "city" : "Mumbai"
+    },
+    {
+        "_id" : 104,
+        "name" : "Nick",
+        "email" : "nick15@gmail.com",
+        "city" : "Pune"
+    },
+    {
+        "_id" : 105,
+        "name" : "John",
+        "email" : "john112@gmail.com",
+        "city" : "Delhi"
+    }
+]
