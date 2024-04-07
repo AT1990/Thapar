@@ -1,8 +1,6 @@
 MongoDB Exercises
 
 
-Reference - https://www.w3resource.com/mongodb-exercises/#MongoDB_restaurants
-
 Structure of 'restaurants' collection:
 {
   "address": {
